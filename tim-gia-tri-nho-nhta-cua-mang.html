@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // let arr1 =[4, 6, 7, 9, -8, 3]
+    //
+    // let arr2 = [7, 12, 6, 9, 20, 56, -89]
+    //
+    // let arr3 = []
+    //
+    // let arr4 = [0, 0, 0, 0, 0, 0]
+
+
+    // function minArray(array) {
+    //     let min = array[0];
+    //     for (let i = 1; i < array.length; i++) {
+    //         if (array[i] < min) {
+    //             min = array[i];
+    //         }
+    //     }
+    //     return min;
+    // }
+    // let min = minArray(arr1);
+    // alert(min);
+    // let min1 = minArray(arr2);
+    // alert(min1);
+    // let arr1 = [ 1,2,3,4,5,6,7,8]
+    // function minArray(array){
+    //     let min = array[0]
+    //     for ( let i = 1; i < array.length; i++){
+    //         if ( array[i] < min) {
+    //             min = array[i]
+    //         }
+    //     }
+    //     return min ;
+    // }
+    // let min = minArray(arr1);
+    // alert(min)
+
+
+let arr1 = [1,2,3,4,5,6,7,8]
+    function minArray(array) {
+    let min = array[0]
+        for ( i = 1; i < array.length; i++) {
+            if ( min > array[i]) {
+                min = array[i]
+            }
+        }
+        return min;
+    }
+let min =minArray(arr1);
+alert(min)
+
+</script>
+
+</body>
+</html>

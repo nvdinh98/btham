@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<form>-->
+<!--    <h1>Fahrenheit</h1>-->
+<!--    <h> chuyen doi gia tri nhiet do c sang do f</h>-->
+<!--    <br>-->
+<!--    <label>Fahrenheit</label>-->
+<!--    <input type="number" id="inputFahrenheit"-->
+<!--           oninput="nhietdo(this.value)">-->
+<!--    <p>Celsius: <span id="dof"></span></p>-->
+
+<!--</form>-->
+<!--<script>-->
+<!--    function nhietdo (doc) {-->
+<!--         doc = parseFloat(doc);-->
+<!--         document.getElementById("dof").innerHTML = (doc - 32) / 1.8;-->
+<!--    }-->
+<!--<form>-->
+
+<!--    <h1>Fahrenheit</h1>-->
+<!--    <h>chuyen doi do c sang do f</h>-->
+<!--    <br>-->
+<!--    <input type="number" id="input" oninput="nhietdo(this.value)">-->
+<!--    <p> Celsius:: <span id="dof"></span></p>-->
+<!--</form>-->
+<!--<script>-->
+<!--    function nhietdo (doc) {-->
+<!--        doc = parseFloat(doc);-->
+<!--        document.getElementById("dof").innerHTML= (doc - 32) / 1.8 ;-->
+<!--    }-->
+
+<!--</script>-->
+<form>
+    <h1> chuyen doi  </h1>
+    <h> chuyen doi nhiet do c sang f</h>
+    <input type="number" oninput="nhietdo(this.value)" id ="input">
+    <p> Celsius : <span id="dof"> </span></p>
+</form>
+<script>
+    function nhietdo(doc) {
+    doc = parseFloat(doc);
+    document.getElementById("dof").innerHTML = (doc-32) / 1.8 ;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="demo.js"></script>
+</head>
+<body>
+<script>
+    function check(n) {
+        if (n < 2) {
+            return false
+        }
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                return false
+            }
+            return true
+        }
+    }
+    let number = 0 ;
+   while (check(number)) {
+      if (number < 1000) {
+          document.write(number)
+      }
+    }
+</script>
+</body>
+</html>

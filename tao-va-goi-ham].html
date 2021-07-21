@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    // function prosecessCofirm(answer) {
+    //     let result = "" ;
+    //     if (answer) {
+    //         result = "vang! toi muon choi"
+    //     } else {
+    //         result = "oh no! toi ban mat roi"
+    //     }
+    //     return result;
+    // }
+    // let confirmAnswer = confirm("ban co muon choi game ko");
+    // let theAnswer = prosecessCofirm(confirmAnswer);
+    // document.write(theAnswer);
+    function prosecessCofirm(answer) {
+        let result = "" ;
+        if (answer) {
+            result = " vang ! toi moi muon choi ";
+        } else  {
+            result =  " oh no ! toi ban mat roi ";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm(" ban co muon choi game ko ?")
+    let theAnswer = prosecessCofirm(confirmAnswer);
+    document.write(theAnswer);
+
+</script>
+</body>
+</html>

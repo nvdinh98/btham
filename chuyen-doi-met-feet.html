@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inputNumber" type="text">
+    <button type="button" onclick="culcalate()">Tinh toan</button>
+    <select>
+      <option>meet</option>
+      <option>feet</option>
+    </select>
+    <p id="result"></p>
+    <script>
+      function feetToMeter(feet) {
+        return 0.305 * feet;
+      }
+      function meterToFeet(meter){
+          return 3.279 * meter ;
+      }
+      function culcalate() {
+        let a = document.getElementById("inputNumber").value;
+        let result = feetToMeter(a);
+        document.getElementById("result").innerHTML = result;
+      }
+      function culcalate(){
+          let b = document.getElementById("inputNumber").value;
+          let result = meterToFeet(b);
+          document.getElementById("result").innerHTML = result;
+      }
+
+    </script>
+
+
+</body>
+</html>
